@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+.service-text{
+ 
+  min-height: 50vh;
+  background-color: #131313;
+  padding-bottom: 40px;
+  overflow-x: hidden;
+}
+.center{
+  padding-top: 20px;
+  display: block;
+  text-align: center;
+}
+.wid{
+  margin-top: 0%;
+  padding-top: 0%;
+}
+
+.service-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap:125px;
+  flex-wrap: wrap;
+  
+  
+}
+
+
+.web-developer{
+  
+  
+  border-width: 1px;
+  border-color: #01d8c3;
+  border-style: solid;
+  width: 240px;
+  height: 200px;
+  background-color:#262626;
+  border-radius: 15px;
+  transition: 5s all;
+  /* transition:  border-width 2px 0.6s ease; */
+  cursor: pointer;
+  
+  transition:opacity 0.3 0.6 ease;
+  padding-bottom: 21px;
+} 
+
+.web-developer:hover .service-icon,
+.web-developer:hover .title-name,
+.web-developer:hover .service-content
+{
+    
+    
+    /* border-width: 10px; */
+    opacity:1;
+    
+    color:#131313
+  
+}
+.web-developer:hover hr{
+    background-color: #131313;
+    border-color: #131313;
+}
+.service-icon{
+  margin-top: 35px;
+  margin-left: 22px;
+  
+}
+.title-name{
+  color: #d0d0d0;
+  margin-left: 22px;
+  
+}
+.service-content{
+  margin-left: 22px;
+  margin-right: 12px;
+  color: #d0d0d0;
+  font-family: "Abel", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 19px;
+}
+
+.web-developer{
+  
+  transition: box-shadow 3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Transition to a bigger shadow on hover */
+.web-developer:hover {
+   box-shadow: 15px 15px 5px rgba(0, 0, 0, 0.5);
+  transform: scale(1.09) ;
+  background-color: #01d8c3;
+}
+
+hr{
+  
+  width: 35%;
+  height: 0.5%;
+  margin-left: 22px;
+  margin-bottom: -18px;
+  margin-top: -11px;
+  background-color: white;
+}
+
+.service-content:hover .fa{
+  color: black;
+}
+
+
+
+
+@media (max-width:1040px){
+  .service-container{
+    gap: 55px;
+  }
+}
+@media (max-width:490px){
+  .service-container{
+    gap: 35px;
+  }
+}
+

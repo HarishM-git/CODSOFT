@@ -1,0 +1,33 @@
+html, body { 
+  
+  height: 100%; width: 100%; }
+
+
+
+
+body{
+  background-color: #040404;
+  margin: 0px;
+  color: #b2b2b2;
+  padding-bottom: 1500px;
+  padding-top: 70px;
+  z-index: 200;
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 100;
+  
+  
+
+
+}
+
+
+
+
+a{
+  color: #aeaeae;
+}
+
+html{
+  scroll-behavior: smooth ;
+}
