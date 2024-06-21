@@ -1,0 +1,47 @@
+.name-intro,b{
+  color: #01d8c3;
+}
+.small-intro{
+  display: flex;
+
+  flex-direction: column;
+  justify-content: center;
+  text-align: center; 
+ 
+}
+.icons{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+
+
+}
+
+.facebook-icon{
+  padding: 20px;
+}
+.linkedin-icon{
+  padding: 20px;
+}
+.github-icon{
+  padding: 20px;
+}
+.gmail-icon{
+  padding: 20px;
+}
+
+.home-text{
+ 
+  min-height: 100vh;
+  align-content: center;
+  overflow-x: hidden
+}
+
+@media (max-width:520px){
+  .home-text{
+    min-height: 70vh;
+      
+  }
+  
+}
