@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Scribble&family=Tac+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Tac+One&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Dancing+Script:wght@400..700&family=Tac+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+
+
+h1.name{
+  color: #b2b2b2;;
+
+  font-size: 27px ;
+ 
+  
+
+  font-family: "Pacifico", cursive;
+  font-weight: 400;
+  font-style: normal;
+ 
+
+  
+  
+}
+
+.header{
+  z-index: 13;
+  display:flex; 
+  height: 55px;
+  flex-direction: row;
+  
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  padding-top: 8px;
+  padding-bottom: 10px;
+  
+  justify-content: space-between;
+  border-bottom-left-radius: 18px;
+
+  backdrop-filter: blur(8px);
+  
+  padding-inline: 22px;
+}
+
+
+
+
+.middle-section{
+
+  display: flex;
+  flex-direction: row;
+  
+  padding-top: 6px;
+  transform: translateY(50%);
+  
+  font-size: 15px;
+  gap: 86px;
+  margin-top: -25px;
+}
+.middle-section{
+  transition: transform 3s ;
+}
+
+
+
+
+.last-section{
+  
+    z-index: 13;  
+    
+}
+
+
+
+.contact-me{
+  padding-left: 0px;
+}
+
+.view-resume{
+  
+  color:#000000;
+  padding-inline: 18px;
+  padding-block: 9px;
+  
+  background-color: #01d8c3;
+ 
+  border-radius: 8px;
+  margin-block: 16px;
+  transition: transform 0.3s ease-in-out;
+}
+
+.view-resume:hover{
+ 
+  
+  border-color: #01d8c3;
+  
+  transform: scale(1.1);
+}
+.left-section{
+  padding-top: 10px;
+}
+
+.logo{
+  
+  height: 60px;
+  width: 60px;
+  border-radius: 50%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Add your CSS styles here */
+header a.active {
+  color:#01d8c3; /* Change the color as needed */
+}
+
+
+@media (max-width:1040px){
+  .middle-section{
+    gap:35px
+  }
+}
+
+@media (max-width:900px){
+  .middle-section{
+    display: none;
+  }
+}
+
+@media (max-width:520px){
+  .small-intro{
+    margin: auto;
+    width: 70%;
+ 
+  }
+  .last-section{
+    display: none;
+  }
+  
+  .header{
+    height: 60px;
+  }
+  .logo{
+    opacity: 0;
+  transition: opacity 0.5s ease;
+  justify-content: center;
+  }
+}
