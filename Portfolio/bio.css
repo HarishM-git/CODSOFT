@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Abel&display=swap');
+
+
+.bio-text{
+  
+  
+ 
+  background-color: #1d1d1d;
+  overflow-x: hidden;
+
+}
+.bio-image-con{
+  display: flex;
+  justify-content: center;    
+  width: 770px;
+  
+  padding-top: 90px;
+}
+
+.bio-image img{
+  width: 320px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 50%;
+  
+}
+
+.text-for-bio{
+ 
+  width: 100%;
+  
+  margin-right: 11px    ;
+}
+
+.bio-con{
+  display: flex;
+  flex-direction: row;
+  height: max-content;
+  padding-bottom: 15px;
+  
+}
+
+.original-text-for-bio{
+  margin-top: 60px;
+ 
+  line-height: 35px;  
+  font-family: "Abel", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  
+
+  }
+  
+.resume-bio{
+  background-color: #01d8c3;
+  width: 140px;
+  padding-left: 15px;
+  height: 40px;
+  border-radius: 5px;
+  transition: transform 0.3s ease-in-out;
+}  
+
+
+.view-resume-bio{
+  color:black;
+  padding-top:9px;
+  
+
+}
+
+.resume-bio:hover{
+  transform: scale(1.15);
+}
+
+
+
+@media (max-width:1100px){
+  .bio-con{
+    flex-direction: column;
+    
+    
+  }
+  .bio-image-con{
+    width: 100%;
+
+
+  }
+  .text-for-bio{
+    margin: auto;
+    width: 85%;
+   
+  }
+  .resume-bio{
+    display: none;
+  }
+}
+
+@media(min-width:800px) and (max-width:1099px){
+  .bio-image img{
+    width: 250px;
+    height: 250px;
+  }
+  .bio-image-con{
+   
+    padding-top: 10px;
+  }
+
+}
+@media(min-width:400px) and (max-width:799px){
+  .bio-image img{
+    width: 150px;
+    height: 150px;
+  }
+  .bio-image-con{
+    line-height: 25px;
+    padding-top: 10px;
+  }
+
+}
+
+@media (max-width:399px){
+  
+  .bio-image img{
+    width:150px;
+    height: 150px;
+
+  }
+  .bio-image-con{
+    line-height: 25px;
+    padding-top: 10px;
+  }
+  
+}
+
