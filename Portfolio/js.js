@@ -146,7 +146,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-
+//for mobile view
   ScrollReveal().reveal('.feature-pro-text', { delay: 850, origin: 'bottom', distance: '100px' });
   ScrollReveal().reveal('.common-model', {
     origin: 'right-bottom',
@@ -169,3 +169,67 @@ document.addEventListener('DOMContentLoaded', function() {
     delay: 600
   });
 });
+
+
+
+
+
+
+
+
+
+document.addEventListener('DOMContentLoaded', function() {
+  const isMobile = window.matchMedia('(max-width: 767px)').matches;
+
+  // Initialize ScrollReveal
+  const sr = ScrollReveal();
+
+  sr.reveal('.header', { delay: 200, origin: 'top', distance: '100px' });
+
+  if (isMobile) {
+    sr.reveal('.home-text', { delay: 350, origin: 'bottom', distance: '50px' });
+    sr.reveal('.github-icon', { origin: 'left', distance: '200px', duration: 1000, delay: 200 });
+    sr.reveal('.gmail-icon', { origin: 'bottom', distance: '50px', duration: 1000, delay: 400 });
+    sr.reveal('.linkedin-icon', { origin: 'top', distance: '50px', duration: 1000, delay: 600 });
+    sr.reveal('.facebook-icon', { origin: 'right', distance: '200px', duration: 1000, delay: 200 });
+    sr.reveal('.service-text', { delay: 700, origin: 'bottom', distance: '100px' });
+    sr.reveal('.service-container', { origin: 'left', distance: '100px', duration: 1000, delay: 400 });
+    sr.reveal('.feature-pro-text', { delay: 850, origin: 'bottom', distance: '100px', duration: 1000 });
+    sr.reveal('.bio-text', { delay: 900, origin: 'bottom', distance: '200px', duration: 1000 });
+    
+
+    sr.reveal('.contact-text', { delay: 700, origin: 'bottom', distance: '100px' });
+    sr.reveal('.lft-in-ct', { origin: 'left', distance: '100px', duration: 1000, delay: 400 });
+   
+  } else {
+    sr.reveal('.home-text', { delay: 350, origin: 'bottom', distance: '100px' });
+    sr.reveal('.github-icon', { origin: 'left', distance: '200px', duration: 1000, delay: 200 });
+    sr.reveal('.gmail-icon', { origin: 'bottom', distance: '50px', duration: 1000, delay: 400 });
+    sr.reveal('.linkedin-icon', { origin: 'top', distance: '50px', duration: 1000, delay: 600 });
+    sr.reveal('.facebook-icon', { origin: 'right', distance: '200px', duration: 1000, delay: 200 });
+    sr.reveal('.service-text', { delay: 700, origin: 'right-bottom', distance: '100px' });
+    sr.reveal('.service-container', { origin: 'left', distance: '100px', duration: 1000, delay: 400 });
+    sr.reveal('.feature-pro-text', { delay: 850, origin: 'right-bottom', distance: '100px', duration: 1000 });
+    sr.reveal('.bio-text', { delay: 900, origin: 'left', distance: '200px', duration: 1000 });
+    sr.reveal('.contact-text', { delay: 850, origin: 'bottom', distance: '100px' });
+
+    sr.reveal('.service-text', { delay: 700, origin: 'right-bottom', distance: '100px' });
+    sr.reveal('.service-container', { origin: 'left', distance: '100px', duration: 1000, delay: 400 });
+    sr.reveal('.feature-pro-text', { delay: 850, origin: 'right-bottom', distance: '100px', duration: 1000 });
+    sr.reveal('.contact-text', { delay: 850, origin: 'right-bottom', distance: '100px' });
+    sr.reveal('.lft-in-ct', {
+      origin: 'right-bottom',
+      distance: '200px',
+      duration: 1000,
+      delay: 600
+    });
+    sr.reveal('#hire', {
+      origin: 'left',
+      distance: '200px',
+      duration: 1000,
+      delay: 600
+    });
+  }
+});
+
+
