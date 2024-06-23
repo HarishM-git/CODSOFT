@@ -233,3 +233,37 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+//header effects according to the window size 
+
+document.addEventListener('DOMContentLoaded', function() {
+  const navLinks = document.querySelectorAll('header a');
+
+  function setActiveLink() {
+      navLinks.forEach(link => {
+          const sectionId = link.getAttribute('href').substring(1);
+          const section = document.getElementById(sectionId);
+          
+          if (isElementInViewport(section)) {
+              navLinks.forEach(navLink => navLink.classList.remove('active'));
+              link.classList.add('active');
+          }
+      });
+  }
+
+  setActiveLink();
+
+  window.addEventListener('scroll', setActiveLink);
+  window.addEventListener('resize', setActiveLink); // Add resize event listener
+
+  function isElementInViewport(el) {
+      if (!el) return false; // Added null check
+      const rect = el.getBoundingClientRect();
+      return (
+          rect.top >= 0 &&
+          rect.left >= 0 &&
+          rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+          rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+      );
+  }
+});
+
