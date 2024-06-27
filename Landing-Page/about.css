@@ -10,3 +10,14 @@
   font-style: normal;
   
 }
+
+.home{
+  background-image: url(images/luca-laurence-ZrqrP9Xs2vI-unsplash.jpg);
+  height: 100vh;
+   
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

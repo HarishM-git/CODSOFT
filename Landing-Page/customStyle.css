@@ -1,5 +1,5 @@
 :root {
-  --main-color: #01d8c3;
+  --main-color: #09A596;
   --background-color: #1d1d1d;
   --heading-color: #ffffff;
   --text-color: #e0e0e0;
@@ -17,12 +17,13 @@ html{
 
 body {
   font-family: Arial, sans-serif;
-  background-color: var(--background-color);
+  background-color:#1d1d1d;
   color: var(--text-color);
+  
 }
 
 .header {
-  background-color: var(--main-color);
+  backdrop-filter: blur(8px);
   padding: 1rem;
 }
 
@@ -55,8 +56,10 @@ img{
 }
 
 .nav-links a {
-  color: var(--background-color);
+  color:white;
   text-decoration: none;
+  font-size:18px;
+  font-weight: 150;
 }
 
 .home {
