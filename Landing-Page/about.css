@@ -21,3 +21,9 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+@media (max-width:900px){
+  .home{
+    background-image: url(images/kelly-sikkema-L5HG3CH_pgc-unsplash.jpg);
+  }
+}
