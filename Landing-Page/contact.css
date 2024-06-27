@@ -1,0 +1,54 @@
+
+section#contact {
+  background-color: #1d1d1d;
+  padding: 40px;
+  margin: 20px auto;
+  max-width: 600px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Subtle box-shadow effect */
+  transition: box-shadow 0.3s ease;
+  transition: transform 0.3s ease-in-out;
+}
+
+section#contact:hover {
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2); /* Box-shadow effect on hover */
+  transition: transform 0.3s ease, background-color 0.3s ease;
+  transform: scale(1.09) ;
+}
+
+section#contact h2 {
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 20px;
+  color: #555; /* Heading color from your theme */
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-item:hover {
+  transform: translateY(-3px); /* Move item up slightly on hover */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Add shadow effect on hover */
+}
+
+.contact-item i {
+  font-size: 24px;
+  margin-right: 10px;
+  color: #3498db; /* Icon color from your theme */
+}
+
+.contact-item p {
+  font-size: 18px;
+  margin: 0;
+  color: #777; /* Text color for contact info from your theme */
+}

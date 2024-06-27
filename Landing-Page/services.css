@@ -46,6 +46,10 @@
 
 .service-card p {
   color: var(--text-color);
+  font-family: "Poppins", sans-serif;
+  font-weight: 100;
+  line-height: 20px;
+  font-size: medium;
 }
 
 /* Media Queries for Responsive Design */
