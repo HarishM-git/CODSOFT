@@ -5,11 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Responsive Landing Page</title>
     <link rel="stylesheet" href="customStyle.css">
+    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="services.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 </head>
 <body>
     <header class="header">
         <nav class="navbar">
-            <a href="#" class="logo">Logo</a>
+            <a href="#" class="logo"><img class="logo" src="images/logo.png" alt="company logo"></a>
             <ul class="nav-links">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
@@ -31,12 +35,34 @@
         <section id="about" class="about">
             <h2>About Us</h2>
             <p>We are dedicated to providing the best service.</p>
+            <div style="text-align: center; margin-top:25px;" class="texts">Embracing the dynamic intersection of technology and creativity, we embody a fusion of diverse skills and passions. With an innate knack for problem-solving and a mastery of full-stack development, particularly in front-end technologies, we sculpt digital landscapes that captivate and inspire. Our journey extends beyond mere coding proficiency; we are equally at home in the realms of design and multimedia. From crafting elegant user interfaces to weaving visual narratives through video and photo editing, we orchestrate experiences that resonate deeply with audiences. Driven by an insatiable curiosity and fueled by a relentless pursuit of excellence, we thrive in environments where innovation thrives and boundaries are pushed. With a unique blend of technical acumen and creative flair, we stand poised to elevate your projects to new heights of success.</div>
         </section>
         
         <section id="services" class="services">
-            <h2>Our Services</h2>
-            <p>Explore the variety of services we offer.</p>
-        </section>
+          <h2>Our Services</h2>
+          <div class="service-cards">
+              <div class="service-card">
+                  <i class="fas fa-code" style=" font-size:larger"></i>
+                  <h3>Full-Stack Development</h3>
+                  <p>We provide comprehensive full-stack development services, from front-end to back-end, ensuring robust and scalable solutions.</p>
+              </div>
+              <div class="service-card">
+                  <i class="fas fa-paint-brush" style=" font-size:larger"></i>
+                  <h3>UI/UX Design</h3>
+                  <p>Our design team creates intuitive and visually appealing user interfaces that enhance the user experience and engagement.</p>
+              </div>
+              <div class="service-card">
+                  <i class="fas fa-video" style=" font-size:larger"></i>
+                  <h3>Multimedia Production</h3>
+                  <p>We offer professional video and photo editing services, bringing your visual content to life with creativity and precision.</p>
+              </div>
+          </div>
+      </section>
+      
+   
+      <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+      
+      
         
         <section id="contact" class="contact">
             <h2>Contact Us</h2>
@@ -45,7 +71,7 @@
     </main>
     
     <footer class="footer">
-        <p>&copy; 2024 Your Company. All rights reserved.</p>
+      <div class="last-text"><b>&#169 2024 </b>&#903 Made with  <i class="fa-solid fa-heart-pulse fa-bounce" style="color: #1d1d1d;" style=" font-size:larger"></i>  by <b>Harish</b> </div>
     </footer>
     
     <script src="commands.js"></script>
