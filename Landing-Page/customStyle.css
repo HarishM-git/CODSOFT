@@ -25,6 +25,10 @@ body {
 .header {
   backdrop-filter: blur(8px);
   padding: 1rem;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  left: 0px;
 }
 
 .navbar {
