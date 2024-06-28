@@ -1,0 +1,109 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+.text-center{
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: larger;
+  margin-bottom: 40px;
+  background-color: #ADDFFF;
+  padding: 15px;
+  border-radius: 15px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f4f4f4;
+  margin: 0;
+  flex-direction: column;
+  text-align: center; 
+}
+
+h1 {
+  margin-bottom: 20px;
+  font-size: 2em;
+  color: #333;
+}
+.container {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+}
+
+
+.input {
+  width: 100%;
+  padding: 20px;
+  font-size: 2em;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  text-align: right;
+}
+
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+
+.button {
+  width: 23%;
+  padding: 20px;
+  font-size: 1.5em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  transition: transform 0.3s ease-in-out;
+}
+
+.button.red {
+  background-color: #f44336;
+  color: #fff;
+}
+
+.button.blue {
+  background-color: #ADDFFF;
+  color: #333;
+}
+
+.button:not(.red):not(.blue) {
+  background-color: #e0e0e0;
+  color: #333;
+}
+
+.button:hover {
+  background-color: #d5d5d5;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transform: translatey(-5px);
+}
+
+.button.red:hover {
+  background-color: #e57373;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.button.blue:hover {
+  background-color: #ADDFFF;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+p {
+  margin-top: 20px;
+  font-size: 0.9em;
+  color: #888;
+  text-align: center;
+}
