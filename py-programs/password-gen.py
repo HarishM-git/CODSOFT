@@ -3,6 +3,7 @@ import string
 
 def gen_password(len):
 
+
     characters = string.ascii_letters + string.digits + string.punctuation
     
 
